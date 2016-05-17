@@ -1,0 +1,820 @@
+[INFO] Listening for transport dt_socket at address: 8000
+[INFO] Found populator: org.glassfish.kernel.embedded.EmbeddedDomainXml
+[ERROR] toukokuuta 17, 2016 1:14:47 IP. org.jvnet.hk2.config.ConfigParser handleElement
+[ERROR] SEVERE: Ignoring unrecognized element jms-service at Line number = 101
+[ERROR] Column number = 72
+[ERROR] System Id = null
+[ERROR] Public Id = null
+[ERROR] Location Uri= null
+[ERROR] CharacterOffset = 5783
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:14:47 IP. org.glassfish.security.services.impl.authorization.AuthorizationServiceImpl initialize
+[ERROR] INFO: Authorization Service has successfully initialized.
+[INFO] 13:14:48.003 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+[INFO] 13:14:48.006 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+[INFO] 13:14:48.013 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[INFO] 13:14:48.013 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[INFO] 13:14:48.018 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[INFO] 13:14:48.018 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[INFO] 13:14:48.106 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[INFO] 13:14:48.106 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[INFO] 13:14:48.107 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[INFO] 13:14:48.108 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[INFO] 13:14:48.355 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 13:14:48.358 [main] INFO org.eclipse.jetty.util.log - Logging initialized @1456ms
+[INFO] 13:14:48.358 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:48.358 [main] DEBUG jndi - supportDeepBinding=false
+[INFO] 13:14:48.358 [main] DEBUG jndi - Adding binding with key=comp obj=Reference Class Name: javax.naming.Context
+[INFO] Type: parser
+[INFO] Content: org.eclipse.jetty.jndi.java.javaNameParser
+[INFO] for context=null as comp: javax.naming.Reference:Reference Class Name: javax.naming.Context
+[INFO] Type: parser
+[INFO] Content: org.eclipse.jetty.jndi.java.javaNameParser
+[INFO] 
+[INFO] 13:14:48.358 [main] DEBUG jndi - Head element of name is: java:global
+[INFO] 13:14:48.358 [main] DEBUG jndi - name modified to global/mejb/MEJBBean
+[INFO] 13:14:48.358 [main] DEBUG jndi - Checking for existing binding for name=global/mejb/MEJBBean for first element of name=global
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. org.glassfish.kernel.javaee.MEJBService postConstruct
+[ERROR] WARNING: Problem in publishing temp proxy for MEJB: global is not bound
+[INFO] 13:14:48.358 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[ERROR] javax.naming.NameNotFoundException: global is not bound
+[INFO] 13:14:48.358 [main] DEBUG jndi - Head element of name is: java:global
+[ERROR] at org.eclipse.jetty.jndi.NamingContext.rebind(NamingContext.java:923)
+[INFO] 13:14:48.358 [main] DEBUG jndi - name modified to global/mejb/MEJBBean!org.glassfish.admin.mejb.MEJBHome
+[ERROR] at org.eclipse.jetty.jndi.java.javaRootURLContext.rebind(javaRootURLContext.java:150)
+[INFO] 13:14:48.358 [main] DEBUG jndi - Checking for existing binding for name=global/mejb/MEJBBean!org.glassfish.admin.mejb.MEJBHome for first element of name=global
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:210)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:196)
+[ERROR] at org.glassfish.kernel.javaee.MEJBService.postConstruct(MEJBService.java:89)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:329)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:377)
+[ERROR] at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:471)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:227)
+[ERROR] at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:84)
+[ERROR] at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2064)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:105)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1212)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1143)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:761)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.go(CurrentTaskFuture.java:560)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.access$100(CurrentTaskFuture.java:442)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:153)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:148)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.proceedTo(AsyncRunLevelContext.java:435)
+[ERROR] at org.glassfish.hk2.runlevel.internal.RunLevelControllerImpl.proceedTo(RunLevelControllerImpl.java:70)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.proceedTo(AppServerStartup.java:534)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.run(AppServerStartup.java:315)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.doStart(AppServerStartup.java:228)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.start(AppServerStartup.java:219)
+[ERROR] at com.sun.enterprise.glassfish.bootstrap.GlassFishImpl.start(GlassFishImpl.java:79)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:56)
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. org.glassfish.kernel.javaee.MEJBService postConstruct
+[ERROR] WARNING: Problem in publishing temp proxy for MEJB: global is not bound
+[ERROR] javax.naming.NameNotFoundException: global is not bound
+[ERROR] at org.eclipse.jetty.jndi.NamingContext.rebind(NamingContext.java:923)
+[ERROR] at org.eclipse.jetty.jndi.java.javaRootURLContext.rebind(javaRootURLContext.java:150)
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:210)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:196)
+[ERROR] at org.glassfish.kernel.javaee.MEJBService.postConstruct(MEJBService.java:89)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:329)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:377)
+[ERROR] at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:471)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:227)
+[ERROR] at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:84)
+[ERROR] at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2064)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:105)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1212)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1143)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:761)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.go(CurrentTaskFuture.java:560)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.access$100(CurrentTaskFuture.java:442)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:153)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:148)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.proceedTo(AsyncRunLevelContext.java:435)
+[ERROR] at org.glassfish.hk2.runlevel.internal.RunLevelControllerImpl.proceedTo(RunLevelControllerImpl.java:70)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.proceedTo(AppServerStartup.java:534)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.run(AppServerStartup.java:315)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.doStart(AppServerStartup.java:228)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.start(AppServerStartup.java:219)
+[ERROR] at com.sun.enterprise.glassfish.bootstrap.GlassFishImpl.start(GlassFishImpl.java:79)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:56)
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. org.glassfish.grizzly.config.Utils newInstance
+[ERROR] WARNING: Instance could not be initialized. Class=interface org.glassfish.grizzly.http.server.AddOn, name=http-listener, realClassName=org.glassfish.grizzly.http2.Http2AddOn
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+[ERROR] INFO: Grizzly Framework 2.3.21 started in: 66ms - bound to [/0.0.0.0:8080]
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. com.sun.enterprise.v3.services.impl.GrizzlyService createNetworkProxy
+[ERROR] INFO: Network listener https-listener on port 0 disabled per domain.xml
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+[ERROR] INFO: Admin Console Adapter: context root: /admin
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+[ERROR] INFO: Admin Console Adapter: context root: /admin
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+[ERROR] INFO: Admin Console Adapter: context root: /admin
+[ERROR] toukokuuta 17, 2016 1:14:48 IP. com.sun.enterprise.v3.server.AppServerStartup postStartupJob
+[ERROR] INFO: Undefined Product Name - define product and version info in config/branding  0.0.0.0.0  (0) startup time : Embedded (984ms), startup services(648ms), total(1 632ms)
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.security.SecurityLifecycle <init>
+[ERROR] INFO: Java security manager is disabled.
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.security.SecurityLifecycle onInitialization
+[ERROR] INFO: Entering Security Startup Service.
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.security.PolicyLoader loadPolicy
+[ERROR] INFO: Loading policy provider com.sun.enterprise.security.jacc.provider.SimplePolicyProvider.
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.security.auth.realm.Realm doInstantiate
+[ERROR] INFO: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.security.auth.realm.Realm doInstantiate
+[ERROR] INFO: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.security.auth.realm.Realm doInstantiate
+[ERROR] INFO: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.security.SecurityLifecycle onInitialization
+[ERROR] INFO: Security Service(s) started successfully.
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.web.WebContainer createHttpListener
+[ERROR] INFO: Created HTTP listener http-listener on host/port 0.0.0.0:8080
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.web.VirtualServer addProbes
+[ERROR] SEVERE: Error adding HttpProbes. NetworkListener https-listeners GrizzlyProxy is NULL
+[ERROR] toukokuuta 17, 2016 1:14:57 IP. com.sun.enterprise.web.WebContainer createHosts
+[ERROR] INFO: Created virtual server server
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.apache.catalina.realm.JAASRealm setContainer
+[ERROR] INFO: Setting JAAS app name glassfish-web
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. com.sun.enterprise.web.WebContainer loadSystemDefaultWebModules
+[ERROR] INFO: Virtual server server loaded default web module
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.apache.catalina.core.StandardContext log
+[ERROR] INFO: WebModule[null] ServletContext.log():No Spring WebApplicationInitializer types detected on classpath
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. com.sun.enterprise.deployment.annotation.impl.ModuleScanner getElements
+[ERROR] WARNING: AS-DEPLOYMENT-00011
+[ERROR] java.lang.NoClassDefFoundError: org/springframework/batch/core/configuration/annotation/BatchConfigurer
+[ERROR] at java.lang.ClassLoader.defineClass1(Native Method)
+[ERROR] at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+[ERROR] at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+[ERROR] at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+[ERROR] at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at com.sun.enterprise.v3.server.APIClassLoaderServiceImpl$APIClassLoader.loadClass(APIClassLoaderServiceImpl.java:238)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1730)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1633)
+[ERROR] at com.sun.enterprise.deployment.annotation.impl.ModuleScanner.getElements(ModuleScanner.java:297)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.processAnnotations(Archivist.java:586)
+[ERROR] at org.glassfish.web.embed.impl.EmbeddedWebArchivist.processAnnotations(EmbeddedWebArchivist.java:149)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:463)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:447)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:338)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:91)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readRestDeploymentDescriptors(Archivist.java:421)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readDeploymentDescriptors(Archivist.java:396)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:271)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:280)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:241)
+[ERROR] at com.sun.enterprise.deployment.archivist.ApplicationFactory.openArchive(ApplicationFactory.java:161)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.processDOL(DolProvider.java:203)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:227)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:96)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.loadDeployer(ApplicationLifecycle.java:881)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainerInfos(ApplicationLifecycle.java:821)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:378)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
+[ERROR] at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:110)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:74)
+[ERROR] Caused by: java.lang.ClassNotFoundException: org.springframework.batch.core.configuration.annotation.BatchConfigurer
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] ... 56 more
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. com.sun.enterprise.deployment.annotation.impl.ModuleScanner getElements
+[ERROR] WARNING: AS-DEPLOYMENT-00011
+[ERROR] java.lang.NoClassDefFoundError: org/springframework/batch/core/configuration/annotation/BatchConfigurer
+[ERROR] at java.lang.ClassLoader.defineClass1(Native Method)
+[ERROR] at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+[ERROR] at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+[ERROR] at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+[ERROR] at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at com.sun.enterprise.v3.server.APIClassLoaderServiceImpl$APIClassLoader.loadClass(APIClassLoaderServiceImpl.java:238)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1730)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1633)
+[ERROR] at com.sun.enterprise.deployment.annotation.impl.ModuleScanner.getElements(ModuleScanner.java:297)
+[ERROR] at org.glassfish.apf.impl.AnnotationProcessorImpl.process(AnnotationProcessorImpl.java:133)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.processAnnotations(Archivist.java:627)
+[ERROR] at org.glassfish.web.embed.impl.EmbeddedWebArchivist.processAnnotations(EmbeddedWebArchivist.java:149)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:463)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:447)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:338)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:91)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readRestDeploymentDescriptors(Archivist.java:421)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readDeploymentDescriptors(Archivist.java:396)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:271)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:280)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:241)
+[ERROR] at com.sun.enterprise.deployment.archivist.ApplicationFactory.openArchive(ApplicationFactory.java:161)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.processDOL(DolProvider.java:203)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:227)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:96)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.loadDeployer(ApplicationLifecycle.java:881)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainerInfos(ApplicationLifecycle.java:821)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:378)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
+[ERROR] at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:110)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:74)
+[ERROR] Caused by: java.lang.ClassNotFoundException: org.springframework.batch.core.configuration.annotation.BatchConfigurer
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] ... 57 more
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lcom/mongodb/MongoClientOptions; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/jdbc/datasource/embedded/EmbeddedDatabase; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.jdbc.EmbeddedDataSourceConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ com/samskivert/mustache/Mustache$Collector ] not found. Error while loading [ class org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/mail/javamail/JavaMailSenderImpl; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.mail.MailSenderValidatorAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ liquibase/integration/spring/SpringLiquibase ] not found. Error while loading [ class org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/springframework/jdbc/datasource/init/DatabasePopulator ] not found. Error while loading [ class org.springframework.boot.autoconfigure.batch.BatchDatabaseInitializer ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.AnnotationProcessorImpl processAnnotations
+[ERROR] INFO: Exception java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy encountered while processing annotaton for element class org.springframework.boot.autoconfigure.velocity.VelocityAutoConfiguration. Message is: sun.reflect.annotation.TypeNotPresentExceptionProxy. Ignoring annotations and proceeding.
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/springframework/jdbc/datasource/init/DatabasePopulator ] not found. Error while loading [ class org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/flywaydb/core/Flyway ] not found. Error while loading [ class org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$FlywayConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/apache/solr/client/solrj/SolrServer ] not found. Error while loading [ class org.springframework.boot.autoconfigure.solr.SolrAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.AnnotationProcessorImpl processAnnotations
+[ERROR] INFO: Exception java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy encountered while processing annotaton for element class org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration. Message is: sun.reflect.annotation.TypeNotPresentExceptionProxy. Ignoring annotations and proceeding.
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/thymeleaf/resourceresolver/IResourceResolver ] not found. Error while loading [ class org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/security/oauth2/client/token/AccessTokenRequest; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2RestOperationsConfiguration$SessionScopedConfiguration$ClientContextConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lgroovy/text/markup/MarkupTemplateEngine; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration$GroovyMarkupConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/session/data/redis/RedisOperationsSessionRepository; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.session.SessionAutoConfiguration$SessionRedisHttpConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:14:58 IP. org.apache.catalina.core.StandardContext log
+[ERROR] INFO: WebModule[null] ServletContext.log():1 Spring WebApplicationInitializers detected on classpath
+[INFO] 13:14:59.017 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:59.017 [main] DEBUG jndi - Looking up name="comp/DefaultManagedExecutorService"
+[INFO] 13:14:59.017 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:14:59.017 [main] DEBUG jndi - supportDeepBinding=false
+[INFO] 13:14:59.017 [main] DEBUG jndi - Made context comp for classloader: WebappClassLoader (delegate=true; repositories=WEB-INF/classes/)
+[INFO] 13:14:59.017 [main] DEBUG jndi - Looking up name="DefaultManagedExecutorService"
+[INFO] 13:14:59.018 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:59.018 [main] DEBUG jndi - Looking up name="comp/DefaultManagedScheduledExecutorService"
+[INFO] 13:14:59.018 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:14:59.018 [main] DEBUG jndi - Looking up name="DefaultManagedScheduledExecutorService"
+[INFO] 13:14:59.027 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:59.027 [main] DEBUG jndi - Looking up name="comp/BeanManager"
+[INFO] 13:14:59.027 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:14:59.027 [main] DEBUG jndi - Looking up name="BeanManager"
+[ERROR] toukokuuta 17, 2016 1:14:59 IP. org.glassfish.tyrus.servlet.TyrusServletContainerInitializer onStartup
+[ERROR] INFO: Registering WebSocket filter for url pattern /*
+[INFO] 13:14:59.150 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:59.150 [main] DEBUG jndi - Looking up name="comp/env/jsf/ProjectStage"
+[INFO] 13:14:59.150 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:14:59.150 [main] DEBUG jndi - Looking up name="env/jsf/ProjectStage"
+[INFO] 13:14:59.151 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:59.151 [main] DEBUG jndi - Looking up name="comp/BeanManager"
+[INFO] 13:14:59.151 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:14:59.151 [main] DEBUG jndi - Looking up name="BeanManager"
+[INFO] 13:14:59.151 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:59.151 [main] DEBUG jndi - Looking up name="comp/env/BeanManager"
+[INFO] 13:14:59.151 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:14:59.152 [main] DEBUG jndi - Looking up name="env/BeanManager"
+[ERROR] toukokuuta 17, 2016 1:14:59 IP. com.sun.faces.config.ConfigureListener contextInitialized
+[ERROR] INFO: Initializing Mojarra 2.2.11 ( 20150505-0732 https://svn.java.net/svn/mojarra~svn/tags/2.2.11@14688) for context ''
+[INFO] 13:14:59.689 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:14:59.689 [main] DEBUG jndi - Looking up name="comp/ValidatorFactory"
+[INFO] 13:14:59.689 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:14:59.689 [main] DEBUG jndi - Looking up name="ValidatorFactory"
+[INFO] 13:14:59.691 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[INFO] 13:14:59.691 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[INFO] 13:14:59.693 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[INFO] 13:14:59.695 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[ERROR] toukokuuta 17, 2016 1:15:00 IP. org.apache.catalina.core.StandardContext log
+[ERROR] SEVERE: WebModule[]Exception starting filter Tomcat WebSocket (JSR356) Filter
+[ERROR] java.lang.InstantiationException
+[ERROR] at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:135)
+[ERROR] at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:5331)
+[ERROR] at org.apache.catalina.core.StandardContext.start(StandardContext.java:5974)
+[ERROR] at com.sun.enterprise.web.WebModule.start(WebModule.java:691)
+[ERROR] at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1041)
+[ERROR] at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:1024)
+[ERROR] at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+[ERROR] at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:2286)
+[ERROR] at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1932)
+[ERROR] at com.sun.enterprise.web.WebApplication.start(WebApplication.java:139)
+[ERROR] at org.glassfish.internal.data.EngineRef.start(EngineRef.java:122)
+[ERROR] at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:291)
+[ERROR] at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:352)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:500)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
+[ERROR] at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:110)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:74)
+[ERROR] Caused by: java.lang.ClassCastException: org.glassfish.tyrus.servlet.TyrusServletContainerInitializer$2 cannot be cast to org.apache.tomcat.websocket.server.WsServerContainer
+[ERROR] at org.apache.tomcat.websocket.server.WsFilter.init(WsFilter.java:40)
+[ERROR] at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:275)
+[ERROR] at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:131)
+[ERROR] ... 32 more
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:15:00 IP. org.glassfish.tyrus.server.TyrusServerConfiguration isAbstract
+[ERROR] WARNING: org.apache.tomcat.websocket.pojo.PojoEndpointBase: Deployed class can't be abstract nor interface. The class will not be deployed.
+[ERROR] toukokuuta 17, 2016 1:15:00 IP. com.sun.enterprise.web.WebApplication start
+[ERROR] INFO: Loading application [gradle-spring-init] at [/]
+[ERROR] toukokuuta 17, 2016 1:15:00 IP. org.glassfish.deployment.admin.DeployCommand execute
+[ERROR] INFO: gradle-spring-init was successfully deployed in 5 804 milliseconds.
+[ERROR] toukokuuta 17, 2016 1:15:00 IP. com.sun.web.security.RealmAdapter getAppContextID
+[ERROR] WARNING: Context path from ServletContext:  differs from path from bundle: /
+[ERROR] toukokuuta 17, 2016 1:15:00 IP. com.vaadin.server.DefaultDeploymentConfiguration checkProductionMode
+[ERROR] WARNING:
+[ERROR] =================================================================
+[ERROR] Vaadin is running in DEBUG MODE.
+[ERROR] Add productionMode=true to web.xml to disable debug features.
+[ERROR] To show debug window, add ?debug to your application URL.
+[ERROR] =================================================================
+[ERROR] ERROR: transport error 202: bind failed: Address already in use
+[INFO] FATAL ERROR in native method: JDWP No transports initialized, jvmtiError=AGENT_ERROR_TRANSPORT_INIT(197)
+[ERROR] ERROR: JDWP Transport dt_socket failed to initialize, TRANSPORT_INIT(510)
+[ERROR] JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [debugInit.c:750]
+[INFO] Listening for transport dt_socket at address: 8000
+[INFO] Found populator: org.glassfish.kernel.embedded.EmbeddedDomainXml
+[ERROR] toukokuuta 17, 2016 1:26:01 IP. org.jvnet.hk2.config.ConfigParser handleElement
+[ERROR] SEVERE: Ignoring unrecognized element jms-service at Line number = 101
+[ERROR] Column number = 72
+[ERROR] System Id = null
+[ERROR] Public Id = null
+[ERROR] Location Uri= null
+[ERROR] CharacterOffset = 5783
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. org.glassfish.security.services.impl.authorization.AuthorizationServiceImpl initialize
+[ERROR] INFO: Authorization Service has successfully initialized.
+[INFO] 13:26:02.218 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+[INFO] 13:26:02.221 [main] INFO org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.2.Final
+[INFO] 13:26:02.227 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[INFO] 13:26:02.228 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[INFO] 13:26:02.234 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[INFO] 13:26:02.239 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[INFO] 13:26:02.313 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[INFO] 13:26:02.313 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[INFO] 13:26:02.314 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[INFO] 13:26:02.316 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[INFO] 13:26:02.410 [main] DEBUG org.eclipse.jetty.util.log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 13:26:02.413 [main] INFO org.eclipse.jetty.util.log - Logging initialized @1104ms
+[INFO] 13:26:02.413 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:02.416 [main] DEBUG jndi - supportDeepBinding=false
+[INFO] 13:26:02.417 [main] DEBUG jndi - Adding binding with key=comp obj=Reference Class Name: javax.naming.Context
+[INFO] Type: parser
+[INFO] Content: org.eclipse.jetty.jndi.java.javaNameParser
+[INFO] for context=null as comp: javax.naming.Reference:Reference Class Name: javax.naming.Context
+[INFO] Type: parser
+[INFO] Content: org.eclipse.jetty.jndi.java.javaNameParser
+[INFO] 
+[INFO] 13:26:02.418 [main] DEBUG jndi - Head element of name is: java:global
+[INFO] 13:26:02.418 [main] DEBUG jndi - name modified to global/mejb/MEJBBean
+[INFO] 13:26:02.418 [main] DEBUG jndi - Checking for existing binding for name=global/mejb/MEJBBean for first element of name=global
+[INFO] 13:26:02.419 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. org.glassfish.kernel.javaee.MEJBService postConstruct
+[INFO] 13:26:02.419 [main] DEBUG jndi - Head element of name is: java:global
+[ERROR] WARNING: Problem in publishing temp proxy for MEJB: global is not bound
+[INFO] 13:26:02.419 [main] DEBUG jndi - name modified to global/mejb/MEJBBean!org.glassfish.admin.mejb.MEJBHome
+[INFO] 13:26:02.419 [main] DEBUG jndi - Checking for existing binding for name=global/mejb/MEJBBean!org.glassfish.admin.mejb.MEJBHome for first element of name=global
+[ERROR] javax.naming.NameNotFoundException: global is not bound
+[ERROR] at org.eclipse.jetty.jndi.NamingContext.rebind(NamingContext.java:923)
+[ERROR] at org.eclipse.jetty.jndi.java.javaRootURLContext.rebind(javaRootURLContext.java:150)
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:210)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:196)
+[ERROR] at org.glassfish.kernel.javaee.MEJBService.postConstruct(MEJBService.java:89)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:329)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:377)
+[ERROR] at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:471)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:227)
+[ERROR] at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:84)
+[ERROR] at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2064)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:105)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1212)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1143)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:761)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.go(CurrentTaskFuture.java:560)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.access$100(CurrentTaskFuture.java:442)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:153)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:148)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.proceedTo(AsyncRunLevelContext.java:435)
+[ERROR] at org.glassfish.hk2.runlevel.internal.RunLevelControllerImpl.proceedTo(RunLevelControllerImpl.java:70)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.proceedTo(AppServerStartup.java:534)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.run(AppServerStartup.java:315)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.doStart(AppServerStartup.java:228)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.start(AppServerStartup.java:219)
+[ERROR] at com.sun.enterprise.glassfish.bootstrap.GlassFishImpl.start(GlassFishImpl.java:79)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:56)
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. org.glassfish.kernel.javaee.MEJBService postConstruct
+[ERROR] WARNING: Problem in publishing temp proxy for MEJB: global is not bound
+[ERROR] javax.naming.NameNotFoundException: global is not bound
+[ERROR] at org.eclipse.jetty.jndi.NamingContext.rebind(NamingContext.java:923)
+[ERROR] at org.eclipse.jetty.jndi.java.javaRootURLContext.rebind(javaRootURLContext.java:150)
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at javax.naming.InitialContext.rebind(InitialContext.java:437)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:210)
+[ERROR] at com.sun.enterprise.naming.impl.GlassfishNamingManagerImpl.publishObject(GlassfishNamingManagerImpl.java:196)
+[ERROR] at org.glassfish.kernel.javaee.MEJBService.postConstruct(MEJBService.java:89)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.postConstructMe(ClazzCreator.java:329)
+[ERROR] at org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:377)
+[ERROR] at org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:471)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.findOrCreate(AsyncRunLevelContext.java:227)
+[ERROR] at org.glassfish.hk2.runlevel.RunLevelContext.findOrCreate(RunLevelContext.java:84)
+[ERROR] at org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2064)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:105)
+[ERROR] at org.jvnet.hk2.internal.ServiceHandleImpl.getService(ServiceHandleImpl.java:87)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.oneJob(CurrentTaskFuture.java:1212)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$QueueRunner.run(CurrentTaskFuture.java:1143)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpOneLevel.run(CurrentTaskFuture.java:761)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.go(CurrentTaskFuture.java:560)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture$UpAllTheWay.access$100(CurrentTaskFuture.java:442)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:153)
+[ERROR] at org.glassfish.hk2.runlevel.internal.CurrentTaskFuture.go(CurrentTaskFuture.java:148)
+[ERROR] at org.glassfish.hk2.runlevel.internal.AsyncRunLevelContext.proceedTo(AsyncRunLevelContext.java:435)
+[ERROR] at org.glassfish.hk2.runlevel.internal.RunLevelControllerImpl.proceedTo(RunLevelControllerImpl.java:70)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.proceedTo(AppServerStartup.java:534)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.run(AppServerStartup.java:315)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.doStart(AppServerStartup.java:228)
+[ERROR] at com.sun.enterprise.v3.server.AppServerStartup.start(AppServerStartup.java:219)
+[ERROR] at com.sun.enterprise.glassfish.bootstrap.GlassFishImpl.start(GlassFishImpl.java:79)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:56)
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. org.glassfish.grizzly.config.Utils newInstance
+[ERROR] WARNING: Instance could not be initialized. Class=interface org.glassfish.grizzly.http.server.AddOn, name=http-listener, realClassName=org.glassfish.grizzly.http2.Http2AddOn
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+[ERROR] INFO: Grizzly Framework 2.3.21 started in: 52ms - bound to [/0.0.0.0:8080]
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. com.sun.enterprise.v3.services.impl.GrizzlyService createNetworkProxy
+[ERROR] INFO: Network listener https-listener on port 0 disabled per domain.xml
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+[ERROR] INFO: Admin Console Adapter: context root: /admin
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+[ERROR] INFO: Admin Console Adapter: context root: /admin
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+[ERROR] INFO: Admin Console Adapter: context root: /admin
+[ERROR] toukokuuta 17, 2016 1:26:02 IP. com.sun.enterprise.v3.server.AppServerStartup postStartupJob
+[ERROR] INFO: Undefined Product Name - define product and version info in config/branding  0.0.0.0.0  (0) startup time : Embedded (714ms), startup services(609ms), total(1 323ms)
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.security.SecurityLifecycle <init>
+[ERROR] INFO: Java security manager is disabled.
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.security.SecurityLifecycle onInitialization
+[ERROR] INFO: Entering Security Startup Service.
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.security.PolicyLoader loadPolicy
+[ERROR] INFO: Loading policy provider com.sun.enterprise.security.jacc.provider.SimplePolicyProvider.
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.security.auth.realm.Realm doInstantiate
+[ERROR] INFO: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.security.auth.realm.Realm doInstantiate
+[ERROR] INFO: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.security.auth.realm.Realm doInstantiate
+[ERROR] INFO: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.security.SecurityLifecycle onInitialization
+[ERROR] INFO: Security Service(s) started successfully.
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.web.WebContainer createHttpListener
+[ERROR] INFO: Created HTTP listener http-listener on host/port 0.0.0.0:8080
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.web.VirtualServer addProbes
+[ERROR] SEVERE: Error adding HttpProbes. NetworkListener https-listeners GrizzlyProxy is NULL
+[ERROR] toukokuuta 17, 2016 1:26:11 IP. com.sun.enterprise.web.WebContainer createHosts
+[ERROR] INFO: Created virtual server server
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.apache.catalina.realm.JAASRealm setContainer
+[ERROR] INFO: Setting JAAS app name glassfish-web
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. com.sun.enterprise.web.WebContainer loadSystemDefaultWebModules
+[ERROR] INFO: Virtual server server loaded default web module
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.apache.catalina.core.StandardContext log
+[ERROR] INFO: WebModule[null] ServletContext.log():No Spring WebApplicationInitializer types detected on classpath
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. com.sun.enterprise.deployment.annotation.impl.ModuleScanner getElements
+[ERROR] WARNING: AS-DEPLOYMENT-00011
+[ERROR] java.lang.NoClassDefFoundError: org/springframework/batch/core/configuration/annotation/BatchConfigurer
+[ERROR] at java.lang.ClassLoader.defineClass1(Native Method)
+[ERROR] at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+[ERROR] at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+[ERROR] at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+[ERROR] at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at com.sun.enterprise.v3.server.APIClassLoaderServiceImpl$APIClassLoader.loadClass(APIClassLoaderServiceImpl.java:238)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1730)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1633)
+[ERROR] at com.sun.enterprise.deployment.annotation.impl.ModuleScanner.getElements(ModuleScanner.java:297)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.processAnnotations(Archivist.java:586)
+[ERROR] at org.glassfish.web.embed.impl.EmbeddedWebArchivist.processAnnotations(EmbeddedWebArchivist.java:149)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:463)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:447)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:338)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:91)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readRestDeploymentDescriptors(Archivist.java:421)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readDeploymentDescriptors(Archivist.java:396)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:271)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:280)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:241)
+[ERROR] at com.sun.enterprise.deployment.archivist.ApplicationFactory.openArchive(ApplicationFactory.java:161)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.processDOL(DolProvider.java:203)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:227)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:96)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.loadDeployer(ApplicationLifecycle.java:881)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainerInfos(ApplicationLifecycle.java:821)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:378)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
+[ERROR] at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:110)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:74)
+[ERROR] Caused by: java.lang.ClassNotFoundException: org.springframework.batch.core.configuration.annotation.BatchConfigurer
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] ... 56 more
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. com.sun.enterprise.deployment.annotation.impl.ModuleScanner getElements
+[ERROR] WARNING: AS-DEPLOYMENT-00011
+[ERROR] java.lang.NoClassDefFoundError: org/springframework/batch/core/configuration/annotation/BatchConfigurer
+[ERROR] at java.lang.ClassLoader.defineClass1(Native Method)
+[ERROR] at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+[ERROR] at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+[ERROR] at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+[ERROR] at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+[ERROR] at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at com.sun.enterprise.v3.server.APIClassLoaderServiceImpl$APIClassLoader.loadClass(APIClassLoaderServiceImpl.java:238)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1730)
+[ERROR] at org.glassfish.web.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1633)
+[ERROR] at com.sun.enterprise.deployment.annotation.impl.ModuleScanner.getElements(ModuleScanner.java:297)
+[ERROR] at org.glassfish.apf.impl.AnnotationProcessorImpl.process(AnnotationProcessorImpl.java:133)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.processAnnotations(Archivist.java:627)
+[ERROR] at org.glassfish.web.embed.impl.EmbeddedWebArchivist.processAnnotations(EmbeddedWebArchivist.java:149)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:463)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readAnnotations(Archivist.java:447)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:338)
+[ERROR] at org.glassfish.web.deployment.archivist.WebArchivist.postAnnotationProcess(WebArchivist.java:91)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readRestDeploymentDescriptors(Archivist.java:421)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.readDeploymentDescriptors(Archivist.java:396)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:271)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:280)
+[ERROR] at com.sun.enterprise.deployment.archivist.Archivist.open(Archivist.java:241)
+[ERROR] at com.sun.enterprise.deployment.archivist.ApplicationFactory.openArchive(ApplicationFactory.java:161)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.processDOL(DolProvider.java:203)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:227)
+[ERROR] at org.glassfish.javaee.core.deployment.DolProvider.load(DolProvider.java:96)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.loadDeployer(ApplicationLifecycle.java:881)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainerInfos(ApplicationLifecycle.java:821)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:378)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
+[ERROR] at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:110)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:74)
+[ERROR] Caused by: java.lang.ClassNotFoundException: org.springframework.batch.core.configuration.annotation.BatchConfigurer
+[ERROR] at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[ERROR] at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+[ERROR] at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+[ERROR] ... 57 more
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lcom/mongodb/MongoClientOptions; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/jdbc/datasource/embedded/EmbeddedDatabase; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.jdbc.EmbeddedDataSourceConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/mail/javamail/JavaMailSenderImpl; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.mail.MailSenderValidatorAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.AnnotationProcessorImpl processAnnotations
+[ERROR] INFO: Exception java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy encountered while processing annotaton for element class org.springframework.boot.autoconfigure.velocity.VelocityAutoConfiguration. Message is: sun.reflect.annotation.TypeNotPresentExceptionProxy. Ignoring annotations and proceeding.
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ liquibase/integration/spring/SpringLiquibase ] not found. Error while loading [ class org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration$LiquibaseConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/springframework/jdbc/datasource/init/DatabasePopulator ] not found. Error while loading [ class org.springframework.boot.autoconfigure.batch.BatchDatabaseInitializer ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ com/samskivert/mustache/Mustache$Collector ] not found. Error while loading [ class org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/springframework/jdbc/datasource/init/DatabasePopulator ] not found. Error while loading [ class org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/flywaydb/core/Flyway ] not found. Error while loading [ class org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$FlywayConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/apache/solr/client/solrj/SolrServer ] not found. Error while loading [ class org.springframework.boot.autoconfigure.solr.SolrAutoConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.AnnotationProcessorImpl processAnnotations
+[ERROR] INFO: Exception java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy encountered while processing annotaton for element class org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration. Message is: sun.reflect.annotation.TypeNotPresentExceptionProxy. Ignoring annotations and proceeding.
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ org/thymeleaf/resourceresolver/IResourceResolver ] not found. Error while loading [ class org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/security/oauth2/client/token/AccessTokenRequest; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2RestOperationsConfiguration$SessionScopedConfiguration$ClientContextConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lgroovy/text/markup/MarkupTemplateEngine; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration$GroovyMarkupConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.apf.impl.DefaultErrorHandler error
+[ERROR] SEVERE: Class [ Lorg/springframework/session/data/redis/RedisOperationsSessionRepository; ] not found. Error while loading [ class org.springframework.boot.autoconfigure.session.SessionAutoConfiguration$SessionRedisHttpConfiguration ]
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.apache.catalina.core.StandardContext log
+[ERROR] INFO: WebModule[null] ServletContext.log():1 Spring WebApplicationInitializers detected on classpath
+[INFO] 13:26:12.790 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:12.790 [main] DEBUG jndi - Looking up name="comp/DefaultManagedExecutorService"
+[INFO] 13:26:12.790 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:26:12.791 [main] DEBUG jndi - supportDeepBinding=false
+[INFO] 13:26:12.791 [main] DEBUG jndi - Made context comp for classloader: WebappClassLoader (delegate=true; repositories=WEB-INF/classes/)
+[INFO] 13:26:12.791 [main] DEBUG jndi - Looking up name="DefaultManagedExecutorService"
+[INFO] 13:26:12.791 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:12.791 [main] DEBUG jndi - Looking up name="comp/DefaultManagedScheduledExecutorService"
+[INFO] 13:26:12.791 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:26:12.791 [main] DEBUG jndi - Looking up name="DefaultManagedScheduledExecutorService"
+[INFO] 13:26:12.802 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:12.802 [main] DEBUG jndi - Looking up name="comp/BeanManager"
+[INFO] 13:26:12.802 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:26:12.802 [main] DEBUG jndi - Looking up name="BeanManager"
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. org.glassfish.tyrus.servlet.TyrusServletContainerInitializer onStartup
+[ERROR] INFO: Registering WebSocket filter for url pattern /*
+[INFO] 13:26:12.945 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:12.946 [main] DEBUG jndi - Looking up name="comp/env/jsf/ProjectStage"
+[INFO] 13:26:12.946 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:26:12.946 [main] DEBUG jndi - Looking up name="env/jsf/ProjectStage"
+[INFO] 13:26:12.947 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:12.947 [main] DEBUG jndi - Looking up name="comp/BeanManager"
+[INFO] 13:26:12.947 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:26:12.947 [main] DEBUG jndi - Looking up name="BeanManager"
+[INFO] 13:26:12.947 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:12.947 [main] DEBUG jndi - Looking up name="comp/env/BeanManager"
+[INFO] 13:26:12.947 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:26:12.947 [main] DEBUG jndi - Looking up name="env/BeanManager"
+[ERROR] toukokuuta 17, 2016 1:26:12 IP. com.sun.faces.config.ConfigureListener contextInitialized
+[ERROR] INFO: Initializing Mojarra 2.2.11 ( 20150505-0732 https://svn.java.net/svn/mojarra~svn/tags/2.2.11@14688) for context ''
+[INFO] 13:26:13.473 [main] DEBUG org.eclipse.jetty.jndi.java.javaURLContextFactory - >>> new root context requested
+[INFO] 13:26:13.473 [main] DEBUG jndi - Looking up name="comp/ValidatorFactory"
+[INFO] 13:26:13.473 [main] DEBUG jndi - Trying thread context classloader
+[INFO] 13:26:13.473 [main] DEBUG jndi - Looking up name="ValidatorFactory"
+[INFO] 13:26:13.475 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+[INFO] 13:26:13.475 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+[INFO] 13:26:13.477 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[INFO] 13:26:13.479 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+[ERROR] toukokuuta 17, 2016 1:26:13 IP. org.apache.catalina.core.StandardContext log
+[ERROR] SEVERE: WebModule[]Exception starting filter Tomcat WebSocket (JSR356) Filter
+[ERROR] java.lang.InstantiationException
+[ERROR] at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:135)
+[ERROR] at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:5331)
+[ERROR] at org.apache.catalina.core.StandardContext.start(StandardContext.java:5974)
+[ERROR] at com.sun.enterprise.web.WebModule.start(WebModule.java:691)
+[ERROR] at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1041)
+[ERROR] at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:1024)
+[ERROR] at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:747)
+[ERROR] at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:2286)
+[ERROR] at com.sun.enterprise.web.WebContainer.loadWebModule(WebContainer.java:1932)
+[ERROR] at com.sun.enterprise.web.WebApplication.start(WebApplication.java:139)
+[ERROR] at org.glassfish.internal.data.EngineRef.start(EngineRef.java:122)
+[ERROR] at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:291)
+[ERROR] at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:352)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:500)
+[ERROR] at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
+[ERROR] at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:534)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:565)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$3.run(CommandRunnerImpl.java:557)
+[ERROR] at java.security.AccessController.doPrivileged(Native Method)
+[ERROR] at javax.security.auth.Subject.doAs(Subject.java:360)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:556)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.doCommand(CommandRunnerImpl.java:1464)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl.access$1300(CommandRunnerImpl.java:109)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1846)
+[ERROR] at com.sun.enterprise.v3.admin.CommandRunnerImpl$ExecutionContext.execute(CommandRunnerImpl.java:1722)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
+[ERROR] at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:110)
+[ERROR] at fi.jasoft.plugin.PayaraServerRunner.main(PayaraServerRunner.java:74)
+[ERROR] Caused by: java.lang.ClassCastException: org.glassfish.tyrus.servlet.TyrusServletContainerInitializer$2 cannot be cast to org.apache.tomcat.websocket.server.WsServerContainer
+[ERROR] at org.apache.tomcat.websocket.server.WsFilter.init(WsFilter.java:40)
+[ERROR] at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:275)
+[ERROR] at org.apache.catalina.core.ApplicationFilterConfig.<init>(ApplicationFilterConfig.java:131)
+[ERROR] ... 32 more
+[ERROR] 
+[ERROR] toukokuuta 17, 2016 1:26:13 IP. org.glassfish.tyrus.server.TyrusServerConfiguration isAbstract
+[ERROR] WARNING: org.apache.tomcat.websocket.pojo.PojoEndpointBase: Deployed class can't be abstract nor interface. The class will not be deployed.
+[ERROR] toukokuuta 17, 2016 1:26:13 IP. com.sun.enterprise.web.WebApplication start
+[ERROR] INFO: Loading application [gradle-spring-init] at [/]
+[ERROR] toukokuuta 17, 2016 1:26:14 IP. org.glassfish.deployment.admin.DeployCommand execute
+[ERROR] INFO: gradle-spring-init was successfully deployed in 5 579 milliseconds.
+[ERROR] toukokuuta 17, 2016 1:26:14 IP. com.sun.web.security.RealmAdapter getAppContextID
+[ERROR] WARNING: Context path from ServletContext:  differs from path from bundle: /
+[ERROR] toukokuuta 17, 2016 1:26:14 IP. com.vaadin.server.DefaultDeploymentConfiguration checkProductionMode
+[ERROR] WARNING:
+[ERROR] =================================================================
+[ERROR] Vaadin is running in DEBUG MODE.
+[ERROR] Add productionMode=true to web.xml to disable debug features.
+[ERROR] To show debug window, add ?debug to your application URL.
+[ERROR] =================================================================
